@@ -1,0 +1,593 @@
+/* =============================================================================
+   HTML5 Boilerplate CSS: h5bp.com/css
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; height: 100%; }
+html, button, input, select, textarea { font-family: 'CardoRegular', Times, serif; color: #222; }
+body { margin: 0; font-size: 1em; line-height: 1.5; height: 100%; }
+
+::-moz-selection { background: #fe57a1; color: #fff; text-shadow: none; }
+::selection { background: #fe57a1; color: #fff; text-shadow: none; }
+
+a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }
+a:focus { outline: thin dotted; }
+a:hover, a:active { outline: 0; }
+
+abbr[title] { border-bottom: 1px dotted; }
+b, strong { font-weight: bold; }
+blockquote { margin: 1em 40px; }
+dfn { font-style: italic; }
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+ins { background: #ff9; color: #000; text-decoration: none; }
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+small { font-size: 85%; }
+
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+svg:not(:root) { overflow: hidden; }
+
+figure { margin: 0; }
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+label { cursor: pointer; }
+legend { border: 0; *margin-left: -7px; padding: 0; white-space: normal; }
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+button, input { line-height: normal; }
+button, input[type="button"], input[type="reset"], input[type="submit"] { cursor: pointer; -webkit-appearance: button; *overflow: visible; }
+button[disabled], input[disabled] { cursor: default; }
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; *width: 13px; *height: 13px; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration, input[type="search"]::-webkit-search-cancel-button { -webkit-appearance: none; }
+button::-moz-focus-inner, input::-moz-focus-inner { border: 0; padding: 0; }
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+.chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
+
+
+/* ===== Initializr Styles =====================================================
+   Author: Jonathan Verrecchia - verekia.com/initializr/responsive-template
+   ========================================================================== */
+
+body {
+  font-family: 'CardoRegular', Times, serif;
+}
+
+/* ===================
+    FONTS
+   =================== */
+
+@font-face {
+    font-family: 'CardoRegular';
+    src: url('/fonts/Cardo104s-webfont.eot');
+    src: url('/fonts/Cardo104s-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Cardo104s-webfont.woff') format('woff'),
+         url('/fonts/Cardo104s-webfont.ttf') format('truetype'),
+         url('/fonts/Cardo104s-webfont.svg#CardoRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CardoItalic';
+    src: url('/fonts/Cardoi99-webfont.eot');
+    src: url('/fonts/Cardoi99-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Cardoi99-webfont.woff') format('woff'),
+         url('/fonts/Cardoi99-webfont.ttf') format('truetype'),
+         url('/fonts/Cardoi99-webfont.svg#CardoItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'CardoBold';
+    src: url('/fonts/Cardob101-webfont.eot');
+    src: url('/fonts/Cardob101-webfont.eot?#iefix') format('embedded-opentype'),
+         url('/fonts/Cardob101-webfont.woff') format('woff'),
+         url('/fonts/Cardob101-webfont.ttf') format('truetype'),
+         url('/fonts/Cardob101-webfont.svg#CardoBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/* ===================
+    ALL: Orange Theme
+   =================== */
+
+::-moz-selection { background: #f16529; color: #fff; text-shadow: none; }
+::selection      { background: #f16529; color: #fff; text-shadow: none; }
+
+/* ===============
+    ALL: IE Fixes
+   =============== */
+
+.ie7 #title { padding-top:20px; }
+
+
+/* ===== Primary Styles ========================================================
+   Author:
+   ========================================================================== */
+
+nav a, nav a:visited {
+  font-family: 'CardoBold', Times, serif;
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px 0;
+
+  background: #e44d26;
+  color: white;
+
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+nav a:hover {
+  color: #e44d26;
+  background-color: #fff;
+}
+
+nav a.invert {
+  color: #e44d26;
+  background-color: #fff;
+}
+
+nav a.invert:hover {
+  color: #e44d26;
+  background-color: #fff;
+}
+
+a {
+  cursor: pointer;
+}
+
+#map {
+  position: absolute;
+  z-index: 10000;
+  top: 0;
+  left: -5000px;
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  background-color: rgb(0%, 0%, 0%);
+  background-color: rgba(0%, 0%, 0%, 0.7);
+  border: 1px solid #666666;
+}
+
+#map_canvas {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+}
+
+#return {
+  position: absolute;
+  z-index: 20000;
+  left: 10px;
+  bottom: 50px;
+  width: 180px;
+}
+
+#return a {
+  font-family: 'CardoBold', Times, serif;
+  cursor: pointer;
+  display: block;
+  padding: 5px 50px;
+  background: #e44d26;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+#return a:hover {
+  color: #e44d26;
+  background-color: #fff;
+}
+
+/* Default for narrow screen */
+
+@media only screen {
+  html {
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+  }
+
+  body { background: transparent; }
+
+  h1, h2 {
+    font-weight: normal;
+  }
+
+  #scroller {
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+    background-color: transparent;
+  }
+
+  .quote, .book-title {
+    font-family: 'CardoItalic', Times, serif;
+  }
+
+  .quote {
+    font-size: 1.2em;
+  }
+
+  .author {
+    text-align: right;
+  }
+
+  #navtop .nav {
+    padding: 5px 50px;
+  }
+
+  #navbottom {
+    display: none;
+  }
+
+  #sidebar, #info, #gallery {
+    width: 96%;
+    margin: 10px auto 0;
+    clear: both;
+  }
+
+  #sidebar, #loweye {
+    text-align: center;
+    color: #fff;
+    background-color: rgb(0%, 0%, 0%);
+    background-color: rgba(0%, 0%, 0%, 0.7);
+  }
+
+  .inner {
+    padding: 10px 10px 15px;
+  }
+
+  .pagesection a, #cboxCurrent a, #cboxSlideshow {
+    font-weight: bold;
+    text-decoration: none;
+    color: #e44d26;
+  }
+
+  .pagesection a:hover {
+    text-decoration: underline;
+    color: white;
+  }
+
+  #info {
+    display: block;
+    color: #fff;
+    background-color: rgb(0%, 0%, 0%);
+    background-color: rgba(0%, 0%, 0%, 0.7);
+  }
+
+  #map-content {
+    font-size: .85em;
+    color: #333;
+  }
+
+  #footer {
+    margin-top: 1000px;
+  }
+
+  #oneeye { display: none;}
+}
+
+/* =============================================================================
+   Media Queries
+   ========================================================================== */
+
+/* Move navbar to bottom for narrow screens */
+@media only screen and (max-width: 719px) {
+  #navtop {
+    display: none;
+  }
+
+  #navbottom {
+    display: block;
+    position: fixed;
+    z-index: 100000;
+    left: 0;
+    bottom: 0;
+    height: 48px;
+    width: 100%;
+    color: #fff;
+    background-color: rgb(0%, 0%, 0%);
+    background-color: rgba(0%, 0%, 0%, 0.7);
+  }
+
+  #navbottom a.nav {
+    float: left;
+    display: block;
+    width: 29%;
+    padding: 4px 0;
+    margin: 8px 2%;
+  }
+
+  #return {
+    display: none;
+  }
+}
+
+/* Use sidebar for screens with large width */
+
+@media only screen and (min-width: 720px) {
+
+  #loweye { display: none; }
+
+  .pagesection {
+    position: absolute;
+    top: 10px;
+    left: 220px;
+    margin: 0;
+    padding: 0;
+  }
+
+  #sidebar, #info, #gallery {
+    margin: 0;
+    padding: 0;
+  }
+
+  #sidebar {
+    display: block;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 200px;
+    margin: 0;
+    padding: 0;
+    z-index: 100000;
+    background-color: rgb(0%, 0%, 0%);
+    background-color: rgba(0%, 0%, 0%, 0.7);
+  }
+
+  #info {
+    width: 640px;
+  }
+
+  #info, #oneeye {
+    display: block;
+  }
+}
+
+@media only screen and (min-width: 720px) and (max-width:880px) { #info { width: 480px; } }
+@media only screen and (max-width: 719px) { #info { width: 96%; margin: 0 auto; } }
+
+@media only screen and (orientation: portrait) {
+
+  html {
+    background: url('/images/backgrounds/portrait/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 1280px) and (max-height: 1910px) and (orientation: portrait) {
+
+  html {
+    background: url('/images/backgrounds/1280x/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 800px) and (max-height: 1198px) and (orientation: portrait) {
+
+  html {
+    background: url('/images/backgrounds/800x/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 640px) and (max-height: 958px) and (orientation: portrait) {
+
+  html {
+    background: url('/images/backgrounds/640x/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 480px) and (max-height: 719px) and (orientation: portrait) {
+
+  html {
+    background: url('/images/backgrounds/480x/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 320px) and (max-height: 479px) and (orientation: portrait) {
+
+  html {
+    background: url('/images/backgrounds/320x/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 240px) and (max-height: 359px) and (orientation: portrait) {
+
+  html {
+    background: url('/images/backgrounds/240x/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/landscape/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 1773px) and (max-height: 1200px) and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/x1200/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 1551px) and (max-height: 1050px) and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/x1050/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 1182px) and (max-height: 800px) and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/x800/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 887px) and (max-height: 600px) and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/x640/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 709px) and (max-height: 480px) and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/x480/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 473px) and (max-height: 320px) and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/x320/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+@media only screen and (max-width: 355px) and (max-height: 240px) and (orientation: landscape) {
+
+  html {
+    background: url('/images/backgrounds/x240/01.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+}
+
+/* =============================================================================
+   Non-Semantic Helper Classes
+   ========================================================================== */
+
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; *line-height: 0; }
+.ir br { display: none; }
+.hidden { display: none !important; visibility: hidden; }
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+.invisible { visibility: hidden; }
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+
+/* =============================================================================
+   Print Styles
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; box-shadow:none !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+  .pagesection, #info { display: block; color: #333; position: relative; }
+  #sidebar, #gallery, #oneeye, #map, #loweye, nav { display: none; }
+}
